@@ -7,3 +7,67 @@ h2{
   padding-top: 120px;
 }
 
+h6{
+  text-align: center;
+  padding-top: 120px
+}
+
+.bioText{
+  text-align: right;
+}
+
+img{
+  width: 100%;
+  
+}
+
+.links{
+  padding-bottom: 100px;
+  text-align: center;
+  display: table-footer-group;
+}
+
+.button {
+  margin-top:15px;
+    max-width:90px;
+    background-color:#eee;
+    border-color:#888888;
+    color:#333;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:center;
+    text-decoration:none;
+    align-items:flex-start;
+    cursor:default;
+    -webkit-appearence: push-button;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    border-color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    min-height: 30px;
+}
+
+.button a {
+  margin-top:4px;
+  display:inline-block;
+  text-decoration:none;
+  color:#333;
+}
+
+.button:hover {
+  background-color:#888;
+}
+
+.button:active {
+  background-color:#333;
+}
+
+.button:hover a, .link-button:active a {
+  color:#fff;
+}
+
