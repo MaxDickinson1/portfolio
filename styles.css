@@ -1,7 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
 body{
   background: papayawhip;
+  font-family: 'Oswald', sans-serif;
 }
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+}
+
+.containerNav{
+  background-color:grey;
+  margin: 0px ;
+  padding: 0px;
+}
+
+li, a, button {
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+.navList{
+  list-style: none;
+}
+
+.navList li{
+  display:inline-block;
+  padding: 0px 20px;
+}
+
+
+
+button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: grey;
+}
+
 h1{
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -29,6 +73,8 @@ img{
 
 p{
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
   .hidden{
@@ -44,4 +90,10 @@ p{
     justify-content: end;
   }
 
+
+.container{
+  display: flex;
+  justify-content: start;
+  width: 300px
+}
 

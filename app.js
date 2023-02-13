@@ -77,3 +77,16 @@ projectsLeave.addEventListener('mouseleave', e => {
 })
 
 //////////////////////////////////////////////////
+
+//////////////////////////////////////////////////
+//mouse hover for nav bar
+//////////////////////////////////////////////////
+
+
+//something isnt working here
+// const navBarHover = document.getElementsByClassName('navBtn')
+// navBarHover.addEventListener('mouseover', e => {
+//     const navBarText = document.getElementsByClassName('navBtn')
+
+//     navBarText.style.coler = 'red'
+// })
