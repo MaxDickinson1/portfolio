@@ -2,6 +2,7 @@
 
 
 
+
 body{
   background: papayawhip;
   font-family: 'Oswald', sans-serif;
@@ -12,16 +13,19 @@ header{
   justify-content: center;
   align-items: center;
   margin: 0px 0px;
+  position: fixed;
 }
 
 .containerNav{
-  background-color:grey;
-  margin: 0px ;
-  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
+
+
 
 li, a, button {
   font-family: 'Oswald', sans-serif;
+  
   
 }
 
@@ -37,10 +41,11 @@ li, a, button {
 
 
 button {
-  padding: 9px 25px;
+  padding: 20px 50px;
   border: none;
-  border-radius: 50px;
-  background-color: grey;
+  background: none;
+  
+
 }
 
 h1{
@@ -77,18 +82,18 @@ p{
   padding-bottom: 50px;
 }
 
-  .hidden{
-    display: none;
-  }
+.hidden{
+  display: none;
+}
 
-  .revealed{
-    display: block;
-  }
+.revealed{
+  display: block;
+}
 
-  .aboutMe{
-    display: flex;
-    justify-content: end;
-  }
+.aboutMe{
+  display: flex;
+  justify-content: end;
+}
 
 
 .container{
@@ -97,3 +102,31 @@ p{
   width: 300px
 }
 
+.links{
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  color:aliceblue;
+}
+
+@media(max-width: 780px){
+
+button {
+  padding: 0px;
+  border: none;
+  background: none;
+  font-size: smaller;
+}
+
+.containerNav{
+  display: flex;
+  justify-content: center;
+}
+
+}
