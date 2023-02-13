@@ -28,20 +28,28 @@
   
   <div id="aboutMe"></div>
   
-  <h2>About Me</h2>
+  <h2 id="aboutMeHeader" onclick="aboutMeButton()">
+    About Me
+  </h2>
+  <div id="aboutMeDiv" class="hidden">
   <div class="container">
-  <p id ="1">
+  <p>
     My name is Max Dickinson, I graduated from Mount Baker Junior Senior High in 2021, I currently live in Marysville Washington.
   </p>
 </div>
+</div>
+
 <div id="resume"></div>
   
-  <h2  id="resumeHeader" onclick="resumeButton()">Resume</h2>
-  
+  <h2 id="resumeHeader" onclick="resumeButton()">
+   Resume
+  </h2>
+
   
   <div id="resumeDiv" class="hidden">
     <div class="container">
-    <p>Past work experience Walmart, Napa Auto Parts, Lynden Door, Axiom Construction Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium obcaecati id, placeat tempora, earum repudiandae sit quia beatae repellendus, est porro eos minus! Eum sequi eaque aperiam repellat fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla soluta possimus, in quidem ratione nam tempora, ducimus nemo quae nihil repellendus explicabo magni harum nostrum hic temporibus corporis incidunt laborum?</p>
+      <a class="resumeLink" href="./resume.pdf">Resume</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium obcaecati id, placeat tempora, earum repudiandae sit quia beatae repellendus, est porro eos minus! Eum sequi eaque aperiam repellat fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla soluta possimus, in quidem ratione nam tempora, ducimus nemo quae nihil repellendus explicabo magni harum nostrum hic temporibus corporis incidunt laborum?</p>
   </div>
     
 </div>
@@ -49,9 +57,32 @@
    
    <div id="projectDiv" class="hidden">
     <h6>Projects</h6>
-    <div class ="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium, voluptatem quisquam architecto, enim placeat molestiae rerum porro consectetur doloremque praesentium tempore saepe commodi excepturi nostrum natus amet consequuntur repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aut expedita, facilis nemo similique non dolorum molestias dignissimos amet nobis, iste numquam iusto molestiae iure, facere commodi maxime quam voluptate.</p>
-  </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
    </div>
 
    <div id="projects"></div>

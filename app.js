@@ -17,12 +17,15 @@
 
 
 
-function navBar() {
-    const navDisplay = document.getElementById("navBar");
-    navDisplay.classList.toggle('revealed')
+// function navBar() {
+//     const navDisplay = document.getElementById("navBar");
+//     navDisplay.classList.toggle('revealed')
+// }
+
+function aboutMeButton() {
+    const resDisplay = document.getElementById("aboutMeDiv");
+    resDisplay.classList.toggle('revealed')
 }
-
-
 
 function resumeButton() {
     const resDisplay = document.getElementById("resumeDiv");
@@ -44,8 +47,10 @@ const resumeGrab = document.getElementById('resumeHeader')
 //adds event listenre for when mouse is hovering over header resume
 resumeGrab.addEventListener('mouseover', e => {
     const h2Text = document.getElementById('resumeHeader')
+    
     //makes it underlined when mouse is of header resume
     h2Text.style.textDecoration = 'underline'
+    h2Text.style.fontSize = '32px'
 })
 //undoes what above does
 const resumeLeave = document.getElementById('resumeHeader')
@@ -53,6 +58,7 @@ resumeGrab.addEventListener('mouseleave', e => {
     const h2Text = document.getElementById('resumeHeader')
     //when mouse isnt hover it isnt underlined
     h2Text.style.textDecoration = 'none'
+    h2Text.style.fontSize = '28.5px'
 })
 
 ///////////////////////////////////////////////////
@@ -67,6 +73,7 @@ projectsHover.addEventListener('mouseover', e => {
     const h2Text = document.getElementById('projectsHeader')
     
     h2Text.style.textDecoration = 'underline'
+    h2Text.style.fontSize = '32px'
 })
 
 const projectsLeave = document.getElementById('projectsHeader')
@@ -74,9 +81,28 @@ projectsLeave.addEventListener('mouseleave', e => {
     const h2Text = document.getElementById('projectsHeader')
     
     h2Text.style.textDecoration = 'none'
+    h2Text.style.fontSize = '28.5px'
 })
 
+/////////////////////////////////////////////////
+//mouse hover about me
 //////////////////////////////////////////////////
+
+const aboutMeHover = document.getElementById('aboutMeHeader')
+    aboutMeHover.addEventListener('mouseover', e => {
+    const h2Text = document.getElementById('aboutMeHeader')
+    
+    h2Text.style.textDecoration = 'underline'
+    h2Text.style.fontSize = '32px'
+})
+
+const aboutMeLeave = document.getElementById('aboutMeHeader')
+aboutMeLeave.addEventListener('mouseleave', e => {
+    const h2Text = document.getElementById('aboutMeHeader')
+    
+    h2Text.style.textDecoration = 'none'
+    h2Text.style.fontSize = '28.5px'
+})
 
 //////////////////////////////////////////////////
 //mouse hover for nav bar
