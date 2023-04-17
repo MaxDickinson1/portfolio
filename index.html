@@ -1,99 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script defer src="app.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link defer rel="stylesheet" href="styles.css">
-</head> 
-<body> 
-  <div class="containerNav">
-  <header onscroll="navScroll()">
-    <nav>
-      <ul class="navList">
-        <li class="navBtn"><a href="#home"><button>Home</button></a></li>
-        <li class="navBtn"><a href="#aboutMe"><button>About Me</button></a></li>
-        <li class="navBtn"><a href="#resume"><button>Resume</button></a></li>
-        <li class="navBtn"><a href="#projects"><button>Projects</button></a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
-<div id="home"></div>
-  <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_02/3181731/200110-desk-makeover-ac-1143p.jpg">
-  <h1>Max Dickinson</h1>
-  
-  <div id="aboutMe"></div>
-  
-  <h2 id="aboutMeHeader" onclick="aboutMeButton()">
-    About Me
-  </h2>
-  <div id="aboutMeDiv" class="hidden">
-  <div class="container">
-  <p>
-    My name is Max Dickinson, I graduated from Mount Baker Junior Senior High in 2021, I currently live in Marysville Washington.
-  </p>
-</div>
-</div>
-
-<div id="resume"></div>
-  
-  <h2 id="resumeHeader" onclick="resumeButton()">
-   Resume
-  </h2>
-
-  
-  <div id="resumeDiv" class="hidden">
-    <div class="container">
-      <a class="resumeLink" href="./resume.pdf">Resume</a>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium obcaecati id, placeat tempora, earum repudiandae sit quia beatae repellendus, est porro eos minus! Eum sequi eaque aperiam repellat fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla soluta possimus, in quidem ratione nam tempora, ducimus nemo quae nihil repellendus explicabo magni harum nostrum hic temporibus corporis incidunt laborum?</p>
-  </div>
-    
-</div>
-   <h2 id="projectsHeader" onclick="projectsButton()">Projects</h2>
-   
-   <div id="projectDiv" class="hidden">
-    <h6>Projects</h6>
-    <div class="card-group">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a class="logo">Max Dickinson</a>
+          <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+      
+    <main>
+      <section id="home">
+        <div class="hero">
+          <h2>Welcome to My Portfolio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi magnam hic illum corporis rem nam aliquam incidunt reprehenderit id atque labore debitis vel numquam iure eum, provident facere inventore!</p>
+          <a href="#projects" class="cta">View My Work</a>
         </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-   </div>
+      </section>
 
-   <div id="projects"></div>
-   
-</body> 
-<footer>
-  <h4>Links</h6>
-    <div class="links">
-    <a href="https://git.generalassemb.ly/maxdickinson2?tab=repositories">GitHub</a>
-    <a href="https://www.linkedin.com/in/max-dickinson-254648265/">LinkedIn</a>
-  </div>
-</footer>
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi facilis cum est, laborum praesentium enim dolorum quam consequuntur, ipsum laboriosam labore. Tempora a velit commodi quis quisquam beatae ratione sequi!</p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>My Projects</h2>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="project1.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <a href="https://main--stately-salmiakki-6c7124.netlify.app/" target="_blank">Crypto App</a>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="project2.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="project3.png" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out to me through any of the following channels:</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/max-dickinson-254648265/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/MaxDickinson1?tab=repositories" target="_blank">GitHub</a></li>
+            <li><a href="mailto:maxdickinson17@gmail.com">maxdickinson17@gmail.com</a></li>
+          </ul>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
 </html>
 
