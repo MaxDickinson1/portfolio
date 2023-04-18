@@ -35,12 +35,6 @@ window.addEventListener('scroll', () => {
 
 
 
-// Show/hide the navigation menu when the hamburger menu is clicked
-const burger = document.querySelector('.burger');
-const navLinksWrapper = document.querySelector('.nav-links-wrapper');
-burger.addEventListener('click', () => {
-  navLinksWrapper.classList.toggle('active');
-  burger.classList.toggle('toggle');
-});
+
 
 
