@@ -41,10 +41,11 @@ form.addEventListener('submit', e => {
   form.reset();
 });
 
-
 function toggleMenu() {
   var navLinks = document.querySelector('.nav-links');
+  console.log(navLinks);
   var burger = document.querySelector('.burger');
   navLinks.classList.toggle('active');
   burger.classList.toggle('toggle');
 }
+
