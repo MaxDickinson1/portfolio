@@ -33,19 +33,14 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Show a message when the contact form is submitted
-const form = document.querySelector('form');
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Thank you for contacting me!');
-  form.reset();
+
+
+// Show/hide the navigation menu when the hamburger menu is clicked
+const burger = document.querySelector('.burger');
+const navLinksWrapper = document.querySelector('.nav-links-wrapper');
+burger.addEventListener('click', () => {
+  navLinksWrapper.classList.toggle('active');
+  burger.classList.toggle('toggle');
 });
 
-function toggleMenu() {
-  var navLinks = document.querySelector('.nav-links');
-  console.log(navLinks);
-  var burger = document.querySelector('.burger');
-  navLinks.classList.toggle('active');
-  burger.classList.toggle('toggle');
-}
 
